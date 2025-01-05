@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPK Łódź - Panel Administratora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="MPK Łódź Logo" class="logo">
+        <h1>MPK Łódź - Panel Administratora</h1>
+        <nav>
+            <a href="index.html">Strona Główna</a>
+        </nav>
+    </header>
+    <main>
+        <section id="add-damage-section">
+            <h2>Dodaj Uszkodzenie</h2>
+            <form id="add-damage-form">
+                <label for="vehicle-id">Numer Taborowy:</label>
+                <input type="text" id="vehicle-id" placeholder="Numer taborowy" required>
+                <label for="damage-description">Opis Uszkodzenia:</label>
+                <textarea id="damage-description" placeholder="Opis uszkodzenia" required></textarea>
+                <label for="damage-date">Data Uszkodzenia:</label>
+                <input type="date" id="damage-date" required>
+                <label for="damage-image">Zdjęcie Uszkodzenia:</label>
+                <input type="file" id="damage-image" accept="image/*" required>
+                <button type="submit">Dodaj Uszkodzenie</button>
+            </form>
+        </section>
+        <section id="manage-damage-section">
+            <h2>Zarządzaj Uszkodzeniami</h2>
+            <form id="search-admin-damage-form">
+                <label for="search-admin-vehicle-id">Wyszukaj według numeru taborowego:</label>
+                <input type="text" id="search-admin-vehicle-id" placeholder="Wpisz numer taborowy">
+                <label>
+                    <input type="checkbox" id="exact-match"> Tylko dokładne dopasowanie
+                </label>
+                <button type="submit">Szukaj</button>
+            </form>
+            <div id="admin-damage-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MPK Łódź</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

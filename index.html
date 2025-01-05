@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwanie Uszkodzeń</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="MPK Łódź Logo" class="logo">
+        <h1>MPK Łódź
+            <br> Wyszukiwanie Uszkodzeń
+        </h1>
+        <nav>
+            <button class="main-button admin-button" onclick="window.location.href='login.html'">Panel Administratora</button>
+
+        </nav>
+    </header>
+    <main>
+        <section id="search-damage-section">
+            <h2>Wyszukaj Uszkodzenie</h2>
+            <form id="search-damage-form">
+                <label for="search-vehicle-id">Numer Taborowy:</label>
+                <input type="text" id="search-vehicle-id" placeholder="Wpisz numer taborowy">
+                <button type="submit">Szukaj</button>
+            </form>
+            <div id="search-results"></div>
+        </section>
+    </main>
+    <footer>
+     <p>&copy; 2025 MPK Łódź</p>
+   <p class="powered-by">Powered by Kamil Jabłoński</p>
+    </footer>
+    <script src="script.js" defer></script>
+    </section>
+</body>
+</html>
